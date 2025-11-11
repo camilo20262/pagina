@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jholman Diaz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      background: linear-gradient(270deg, #1a1a1a, #2c3e50, #1a1a1a);
+      background-size: 600% 600%;
+      animation: gradientShift 15s ease infinite;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-weight: 700;
+      color: #f8f9fa;
+      margin-bottom: 25px;
+    }
+
+    .btn-custom {
+      width: 260px;
+      padding: 12px 0;
+      margin-bottom: 15px;
+      font-weight: 600;
+      border-radius: 15px;
+      border: none;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: transform 0.2s ease, opacity 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    /* Colores de los botones */
+    .btn-site { background: linear-gradient(90deg, #3a0ca3, #4361ee); }
+    .btn-cv { background: linear-gradient(90deg, #06beb6, #48b1bf); }
+    .btn-linkedin { background-color: #0a66c2; }
+    .btn-github { background-color: #171515; }
+    .btn-contact { background: linear-gradient(90deg, #1e3c72, #2a5298); }
+    .btn-email { background: #ff6600; }
+    .btn-coffee { background: #ffdd00; color: #000; font-weight: 700; }
+
+    .btn-coffee:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text-center">
+    <img src="https://i.imgur.com/JZqk4Jq.png" alt="Foto de perfil" class="profile-img">
+    <h2>Jholman Diaz</h2>
+
+    <button onclick="location.href='https://tu-sitio.com'" class="btn-custom btn-site">
+      <i class="fa-solid fa-globe"></i> Sitio web personal
+    </button>
+
+    <button onclick="location.href='https://tucv.com'" class="btn-custom btn-cv">
+      <i class="fa-solid fa-file-lines"></i> CV
+    </button>
+
+    <button onclick="location.href='https://www.linkedin.com/in/camilo-diaz-09a2a1391/'" class="btn-custom btn-linkedin">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </button>
+
+    <button onclick="location.href='https://github.com/camilo20262'" class="btn-custom btn-github">
+      <i class="fa-brands fa-github"></i> GitHub
+    </button>
+
+    <button onclick="location.href='https://wa.me/573001234567'" class="btn-custom btn-contact">
+      <i class="fa-solid fa-phone"></i> Contáctame
+    </button>
+
+    <button onclick="location.href='mailto:camilo20263@gmail.com'" class="btn-custom btn-email">
+      <i class="fa-solid fa-envelope"></i> camilo20263@gmail.com
+    </button>
+
+    <button onclick="location.href='https://buymeacoffee.com/jholman'" class="btn-custom btn-coffee">
+      <i class="fa-solid fa-mug-hot"></i> Buy me a Coffee
+    </button>
+  </div>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
